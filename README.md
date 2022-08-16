@@ -26,7 +26,9 @@ Learners will be able to:
 |20 mins|Code Along| Practical hands on|
 ||**1 HR MARK**|
 |5 mins|Break|Break|
-|40 mins|Code Along| Practical hands on|
+|10 mins|Conceptual Knowledge| How To Achieve High Availability|
+|10 mins|Conceptual Knowledge| Practical hands on|
+|20 mins|Conceptual Knowledge| Practical hands on|
 |5 mins|Buffer|In case of overrun|
 |5 mins|Break||
 |5 mins|Assignment Briefing|Help students to understand the expectation and direction of the assignment to prevent mis-interpretations.|
