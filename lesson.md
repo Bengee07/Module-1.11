@@ -79,7 +79,7 @@ Even while three nines, or 99.9%, is typically thought to be a respectable uptim
 **TO-DO: Lets Calculate The Downtime Permonth and The Downtime Perweek**
 
 
-## Part 3 - How do we achieve HA?
+## Part 4 - How do we achieve HA?
 
 A system cannot become more stable or attain high availability by adding additional components. In fact, it might have the reverse effect because adding more components makes failures more likely. Modern designs enable the distribution of workloads across numerous instances, such as a network or a cluster, which aids in load balancing, an approach to resource management that maximizes output, reduces reaction times, and avoids overloading any system. Failover systems, which include switching to a backup server, component, or network when a current one fails, are another aspect of this process.
 
@@ -106,7 +106,7 @@ It's a huge step forward to scale up your applications and subsequently your dat
 You must consequently maintain your servers spread out in different places. You can choose the physical location of your servers with the majority of contemporary web services. Make intelligent decisions to ensure that your servers are spread out globally rather than localized in one place.
 
 
-## Part 4 - Best Practices For High Availability
+## Part 5 - Best Practices For High Availability
 
 It is strongly advised, especially for mission-critical applications, to employ a High Availability (HA) design to reduce system failures and prevent both planned and unplanned downtimes. Experts in availability maintain that well-designed and thoroughly tested components are essential for any system to be highly available. A high availability architecture's design and subsequent implementation can be challenging given the numerous software, hardware, and deployment alternatives available. But a successful endeavor often begins with well defined and thoroughly comprehended business requirements. The architecture of choice must be capable of providing the appropriate levels of security, scalability, performance, and availability.
 
@@ -143,3 +143,14 @@ When it comes to preventing service failure in the face of catastrophic occurren
 
 There are further steps a company can take to improve its preparedness in the case of a system breakdown that causes downtime, despite the fact that using the best practices for high availability is essentially planning for failure. Data on resource usage or failure that can be utilized to identify issues and spot trends should be retained by organizations. Only by continuously monitoring operational workload can this data be gathered. To gather problem data, build problem history, and start right away solving problems, a recovery help desk can be set up. A recovery plan should be thoroughly written and periodically evaluated to guarantee that it will work when confronted with unforeseen interruptions. Staff training on availability engineering will improve their skills in designing, deploying, and maintaining high availability architectures. Security policies should also be put in place to curb incidences of system outages due to security breaches.
 
+
+## Part 5 - Use Case on How To Achieve HA
+
+
+You and your group will have further discussion on how to implement HA for different use cases:
+
+- eCommerce
+- Financial Institution
+- Government
+- Personal Static Website
+- eHailing Application
