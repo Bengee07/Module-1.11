@@ -46,9 +46,23 @@ You may considerably lower the likelihood that your crucial business data will b
 
 ---
 
-## Part 2 - Insert Summary
+## Part 2 - What System Components Are Required for High Availability?
 
-Insert Instructions
+For the actual implementation of high availability, a number of factors need to be properly taken into account. High availability depends on elements other than just software implementation, including:
+
+**Environment**: if all your servers are located in the same geographical area, an environmental condition such as an earthquake or flooding could take your whole system down. Having redundant servers in different datacenters and geographical areas will increase reliability.
+
+
+**Hardware**: highly available servers should be resilient to power outages and hardware failures, including hard disks and network interfaces.
+
+
+**Software**: the whole software stack, including the operating system and the application itself, must be prepared for handling unexpected failure that could potentially require a system restart, for instance.
+
+
+**Data**: data loss and inconsistency can be caused by several factors, and it’s not restricted to hard disk failures. Highly available systems must account for data safety in the event of a failure.
+
+
+**Network**: unplanned network outages represent another possible point of failure for highly available systems. It is important that a redundant network strategy is in place for possible failures.
 
 ---
 
