@@ -14,6 +14,9 @@ In this lesson, it will explore more what exactly high availability means and ho
 
 ## Part 1 - High Availability
 
+![image](https://user-images.githubusercontent.com/106639884/185000669-9673d506-b2e2-47e0-bf84-ef2411e02e3c.png)
+
+
 The term "availability" in computing refers to both the amount of time that a service is accessible and the amount of time it takes for a system to react to a user's request. A system or component's high availability refers to a property that guarantees a high level of operational performance for a specific amount of time.
 
 A value of 100% would mean that the system never fails. Availability is frequently expressed as a percentage indicating how much uptime is expected from a specific system or component in a given period of time. For instance, a system that promises 99% uptime over the course of a year may have up to 3.65 days of outage (1%).
@@ -65,6 +68,16 @@ For the actual implementation of high availability, a number of factors need to 
 **Network**: unplanned network outages represent another possible point of failure for highly available systems. It is important that a redundant network strategy is in place for possible failures.
 
 ---
+
+## Part 3 - Availability Measures
+
+Even while three nines, or 99.9%, is typically thought to be a respectable uptime, it still equates to 8 hours and 45 minutes of downtime annually. Let's look at the table showing how the different availability levels translate into downtime hours.
+
+![image](https://user-images.githubusercontent.com/106639884/185001295-3564f063-572a-4dbf-bda4-62ac704a1bda.png)
+
+
+**TO-DO: Lets Calculate THe Downtime permonth and Downtime perweek**
+
 
 ## Part 3 - How do we achieve HA?
 
