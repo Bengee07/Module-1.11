@@ -2,7 +2,7 @@
 
 ### Preparation
 
-Write about any preparations needed for the lesson, such as tools, installations, prior-knowledge, etcs.
+None.
 
 ### Lesson Overview
 
