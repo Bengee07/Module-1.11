@@ -76,7 +76,7 @@ Even while three nines, or 99.9%, is typically thought to be a respectable uptim
 ![image](https://user-images.githubusercontent.com/106639884/185001295-3564f063-572a-4dbf-bda4-62ac704a1bda.png)
 
 
-**TO-DO: Lets Calculate THe Downtime permonth and Downtime perweek**
+**TO-DO: Lets Calculate The Downtime Permonth and The Downtime Perweek**
 
 
 ## Part 3 - How do we achieve HA?
