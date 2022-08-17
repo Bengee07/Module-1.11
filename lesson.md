@@ -30,7 +30,7 @@ Whatever the cause, downtimes can have negative impact on the health of your com
 As a result, the expenditures related to downtime might cause anything from a little budget imbalance to a significant hole in your wallet. High availability is necessary for a number of reasons, but one of them is to prevent downtime. Several additional factors include:
 
 
-**1. Maintaining SLAs**
+**1. Maintain SLAs**
 
 For MSPs (Managed Service Providers) to guarantee the delivery of high-quality services to their clients, maintaining uptime is a crucial requirement. High-availability systems enable MSPs to consistently meet their SLAs (Service Level Agreements) and guarantee that their clients' networks don't go down.
 
@@ -108,40 +108,57 @@ Servers must be then spread out in different places. Choose the appropriate phys
 
 ## Part 5 - Best Practices For High Availability
 
-It is strongly advised, especially for mission-critical applications, to employ a High Availability (HA) design to reduce system failures and prevent both planned and unplanned downtimes. Experts in availability maintain that well-designed and thoroughly tested components are essential for any system to be highly available. A high availability architecture's design and subsequent implementation can be challenging given the numerous software, hardware, and deployment alternatives available. But a successful endeavor often begins with well defined and thoroughly comprehended business requirements. The architecture of choice must be capable of providing the appropriate levels of security, scalability, performance, and availability.
+It is strongly advised, especially for mission-critical applications, to employ a High Availability (HA) design to reduce system failures and prevent both planned and unplanned downtimes. Experts in availability maintain that well-designed and thoroughly tested components are essential for any system to be highly available. A high availability architecture's design and subsequent implementation can be challenging given the numerous software, hardware, and deployment alternatives available. But a successful endeavor often begins with well defined business requirements. The architecture of choice must be capable of providing the appropriate levels of security, scalability, performance, and availability.
 
-Compute environments must be designed with high availability if a desired level of operational continuity is to be ensured during production hours. Enterprises can maintain critical applications online in addition to properly building the architecture by adhering to the best practices for high availability.
+Environments must be designed with high availability if a desired level of operational continuity is to be ensured during production hours. Enterprises can maintain critical applications online in addition to properly building the architecture by adhering to the best practices for high availability.
 
 
 ![image](https://user-images.githubusercontent.com/106639884/184999839-d0590e24-da77-4006-a25f-c92cd8644eaf.png)
 
 
-**1. Data Backups, Recovery and Replication**
+**1. Data Backups, Recovery, and Replication**
 
-A solid backup and recovery plan is the defining characteristic of a successful data security strategy that guards against system failure. Never save valuable data without adequate backups, replication, or the capacity to recreate the data. Every data center should make early preparations for data loss or corruption. Data inaccuracies may affect financial accounts, customer authentication, and ultimately the legitimacy of the corporate community. Making a complete backup of the primary database and then incrementally checking the source server for data corruptions is the suggested method for ensuring data integrity. The first step in recovering from a catastrophic system loss is to create comprehensive backups.
+A solid backup and recovery plan is the defining characteristic of a successful data security strategy that guards against system failure. **Never** save valuable data **without adequate backups, replication, or the capacity to recreate the data**. Every data center should make early preparations for data loss or corruption. Data inaccuracies may affect financial accounts, customer authentication, and ultimately, the legitimacy of the corporate community. 
+
+
+Making a complete backup of the primary database and then incrementally checking the source server for data corruptions is the suggested method for ensuring data integrity. The first step in recovering from a catastrophic system loss is to create comprehensive backups.
 
 **2. Clustering**
 
-Each and every application service will eventually fail, even with the best software engineering. The goal of high availability is to deliver application services notwithstanding errors. In the event of a problem, clustering can offer immediate failover application services. When a server goes down, a "cluster aware" application service can fall back to a backup server and still call resources from several servers. Multiple nodes that communicate information over shared data memory grids make up a high availability cluster. This means that as long as at least one node in the cluster is completely functional, any node can be unplugged from the network or shut down, and the cluster as a whole will continue to function normally.
+All application services will eventually fail, even with the best software engineering. The goal of high availability is to deliver application services notwithstanding errors. In the event of a problem, clustering can offer immediate failover application services.
+
+
+When a server goes down, a "cluster aware" application service can fall back to a backup server and still call resources from several servers. Multiple nodes that communicate information over shared data memory grids make up a high availability cluster. This means that as long as at least one node in the cluster is completely functional, any node can be unplugged from the network or shut down, and the cluster as a whole will continue to function normally.
 
 
 **3. Network Load Balancing**
 
-Critical web-based applications can be made more available by using load balancing. When instances of a server fail, the traffic is immediately transferred to servers that are still up and running, replacing the failed instances seamlessly. Load balancing not only promotes high availability but also progressive scalability. Either a "pull" or a "push" model can be used to balance network load. Higher levels of fault tolerance are made possible inside service applications. While the cluster is running, each node can be upgraded individually and rejoined. By establishing a virtualized cluster that makes use of the available hardware resources, the high cost of buying additional hardware to build a cluster can be reduced.
+Critical web-based applications can be made more available by using load balancing. When instances of a server fail, the traffic is immediately transferred to servers that are still up and running, replacing the failed instances seamlessly. 
+
+
+Load balancing not only promotes high availability but also progressive scalability. Either a "pull" or a "push" model can be used to balance network load. Higher levels of fault tolerance are made possible inside service applications. While the cluster is running, each node can be upgraded individually and rejoined. By establishing a virtualized cluster that makes use of the available hardware resources, the high cost of buying additional hardware to build a cluster can be reduced.
 
 
 **4. Fail Over Solutions**
 
-Traditionally, a high availability architecture consists of a collection of loosely coupled servers with failover features. In a nutshell, failover is a backup operational mode where a secondary system takes over a primary system's functions in the event that the original one goes down due to failure or planned downtime. When the backup server is only launched after the first one has been entirely shut down, this is known as a "cold failover." When all the servers are active at the same time and just one server is handling the whole load, this is known as a "hot failover." Tasks are automatically transferred from one scenario to the other to keep the end user's experience as fluid as possible. In a controlled setting, DNS can be used to manage failover.
+Traditionally, a high availability architecture consists of a collection of loosely coupled servers with failover features. In a nutshell, failover is a backup operational mode where a secondary system takes over a primary system's functions in the event that the original one goes down due to failure or planned downtime. When the backup server is only launched after the first one has been entirely shut down, this is known as a "cold failover." 
+
+When all the servers are active at the same time and just one server is handling the whole load, this is known as a "hot failover." Tasks are automatically transferred from one scenario to the other to keep the end user's experience as fluid as possible. In a controlled setting, DNS can be used to manage failover.
 
 **5. Geographic redundancy**
 
-When it comes to preventing service failure in the face of catastrophic occurrences like natural disasters that cause system outages, geo-redundancy is the only line of defense. Multiple servers are installed at geographically distant places, just like in the case of geo-replication. The places ought to be dispersed internationally rather of being localized in one place. Running distinct application stacks in each site is essential so that if one location fails, the other can still function. These places ought to be totally independent of one another.
+When it comes to preventing service failure in the face of catastrophic occurrences like natural disasters that cause system outages, geo-redundancy is the only line of defense. Multiple servers are installed at geographically distant places, just like in the case of geo-replication. 
+
+
+The places ought to be dispersed internationally rather of being localized in one place. Running distinct application stacks in each site is essential so that if one location fails, the other can still function. These places should have complete independence from one another.
 
 
 **6. Plan for failure**
 
-There are further steps a company can take to improve its preparedness in the case of a system breakdown that causes downtime, despite the fact that using the best practices for high availability is essentially planning for failure. Data on resource usage or failure that can be utilized to identify issues and spot trends should be retained by organizations. Only by continuously monitoring operational workload can this data be gathered. To gather problem data, build problem history, and start right away solving problems, a recovery help desk can be set up. A recovery plan should be thoroughly written and periodically evaluated to guarantee that it will work when confronted with unforeseen interruptions. Staff training on availability engineering will improve their skills in designing, deploying, and maintaining high availability architectures. Security policies should also be put in place to curb incidences of system outages due to security breaches.
+There are further steps that can be taken to improve preparedness in the case of a system breakdown that causes downtime, despite the fact that using the best practices for high availability is essentially planning for failure. 
+
+
+Data on resource usage or failure can be utilized in order to identify issues and spot trends should be retained by organizations. Only by continuously monitoring operational workload can this data be gathered. To gather problem data, build problem history, and start right away solving problems, a recovery help desk can be set up. A recovery plan should be thoroughly written and periodically evaluated and tested to guarantee that it will work when confronted with unforeseen interruptions. Staff training on availability engineering can improve their skills in designing, deploying, and maintaining high availability architectures. Security policies should also be put in place to curb incidences of system outages due to security breaches.
 
 
 ## Part 5 - Use Case on How To Achieve HA
@@ -153,4 +170,4 @@ You and your group will have further discussion on how to implement HA for diffe
 - Financial Institution
 - Government
 - Personal Static Website
-- eHailing Application
+- eMail Application
