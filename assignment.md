@@ -8,7 +8,7 @@ Presentation with your own group about how to implement HA for different use cas
 - Financial Institution
 - Government
 - Personal Static Website
-- eHailing Application
+- eMail Application
 
 
 ### Submission 
