@@ -15,4 +15,6 @@ Technical knowledge is vast. Timebox yourself for 3 hours to work on the followi
 
 ### Helpful Links (References)
 
-- add links
+- https://www.techtarget.com/searchdatacenter/definition/high-availability
+- https://avinetworks.com/glossary/high-availability/
+- https://www.cisco.com/c/en/us/solutions/hybrid-work/what-is-high-availability.html
